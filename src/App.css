@@ -1,0 +1,135 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.entry-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  margin: 8px 0px;          
+}
+
+.entry {
+  margin: 0; 
+}
+
+.delete-button {
+  padding: 4px 8px;
+  cursor: pointer;
+  opacity: .5;
+}
+
+.clear-history {
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.task-form {
+  display: flex;
+  gap: 8px;            
+  align-items: center;  
+  margin-bottom: 16px;  
+  padding-top: 100px;
+}
+
+.task-form input {
+  flex: 1;             
+  padding: 6px 8px;
+  font-size: 14px;
+}
+
+.task-form button {
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.task-sections {
+  display: flex;
+  gap: 20px; 
+}
+
+.task-list {
+  padding: 10px;
+  border: 1px solid rgb(46, 43, 43);
+}
+
+.done-list {
+  width: 50%;
+  min-height: 300px;
+  border: 1px solid lightgray;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.clear-history {
+  display: block;
+  margin-top: 10px;
+  margin-left: auto; 
+  margin-right: auto;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+
+.task-sections {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Both columns will stay fixed and equal size */
+.task-list,
+.done-list {
+  width: 50%;          /* Each takes half the screen */
+  min-height: 300px;   /* Fixed height so they don't shrink */
+  border: 1px solid lightgray;
+  padding: 10px;
+  box-sizing: border-box; 
+  overflow-y: auto;    /* So large content scrolls instead of resizing */
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 5px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;      
+  justify-content: flex-start;      
+  position: fixed;         
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: rgb(54, 54, 54);  
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1000;        
+  height:10%     
+}
+
+.image {
+  width: 64px;
+  height: 64px;
+  margin-right: 5px;    
+  padding: 5 0px;
+}
+
+.navbar h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 60px;
+  margin: 0;
+}
