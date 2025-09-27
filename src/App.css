@@ -82,15 +82,15 @@
   align-items: flex-start;
 }
 
-/* Both columns will stay fixed and equal size */
+
 .task-list,
 .done-list {
-  width: 50%;          /* Each takes half the screen */
-  min-height: 300px;   /* Fixed height so they don't shrink */
+  width: 50%;         
+  min-height: 300px;   
   border: 1px solid lightgray;
   padding: 10px;
   box-sizing: border-box; 
-  overflow-y: auto;    /* So large content scrolls instead of resizing */
+  overflow-y: auto;  
 }
 
 .section-title {
